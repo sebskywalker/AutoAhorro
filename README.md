@@ -16,8 +16,9 @@ Simulador de autoahorro que redondea gastos y calcula remanentes por transacció
 - 📊 Muestra gráficos interactivos con el framework **Charts** de Apple.
 
 ---
-```
 ## 🧱 Estructura del proyecto
+```
+
 Sources/
 ├── Domain/
 │   └── DomainModels.swift         // Modelos: Restriction, Transaction, Output, etc.
