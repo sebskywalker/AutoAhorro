@@ -22,26 +22,17 @@ Simulador de autoahorro que redondea gastos y calcula remanentes por transacció
 Sources/
 
 ├── Domain/
-
 │   └── DomainModels.swift         // Modelos: Restriction, Transaction, Output, etc.
-
 ├── Input/
-
 │   └── UserInput.swift            // [Por implementar] Entrada dinámica del usuario
-
 ├── IO/
-
 │   └── JSONExporter.swift         // Exporta resultado como JSON legible
 ├── Logic/
-
 │   └── TransactionProcessor.swift // Procesamiento, redondeo, formatter
-
 └── AutoAhorro/
-
 └── main.swift                 // Versión terminal que orquesta todo
 
 AutoAhorroApp/
-
 ├── AutoAhorroAppApp.swift         // Punto de entrada SwiftUI
 ├── ContentView.swift              // Vista principal combinada
 ├── ChartView.swift                // Gráfico de barras
@@ -50,7 +41,6 @@ AutoAhorroApp/
 └── Assets.xcassets/               // Iconos y logo
 
 CAPTURAS/
-
 ├── 1.1.png                        // Launch screen simulado
 ├── 1.2.png                        // Gráfica con barras de datos
 ├── 1.3.png                        // Lista de resultados
