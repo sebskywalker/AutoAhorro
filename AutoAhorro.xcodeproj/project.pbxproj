@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F6B5A532E2D9198004D181C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B5A522E2D9198004D181C /* main.swift */; };
+		9F6B5A602E2DA7A4004D181C /* UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B5A5F2E2DA7A4004D181C /* UserInput.swift */; };
+		9F6B5A642E2DA7F8004D181C /* TransactionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B5A632E2DA7F8004D181C /* TransactionProcessor.swift */; };
+		9F6B5A682E2DA82F004D181C /* JSONExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B5A672E2DA82F004D181C /* JSONExporter.swift */; };
+		9F6B5A6A2E2DAE83004D181C /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B5A692E2DAE83004D181C /* DomainModels.swift */; };
+		9F6B5A812E2DCABC004D181C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6B5A802E2DCABC004D181C /* Charts.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9F6B5A4D2E2D9198004D181C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,12 +29,24 @@
 
 /* Begin PBXFileReference section */
 		9F6B5A4F2E2D9198004D181C /* AutoAhorro */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AutoAhorro; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6B5A522E2D9198004D181C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9F6B5A5F2E2DA7A4004D181C /* UserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInput.swift; sourceTree = "<group>"; };
+		9F6B5A632E2DA7F8004D181C /* TransactionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProcessor.swift; sourceTree = "<group>"; };
+		9F6B5A672E2DA82F004D181C /* JSONExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExporter.swift; sourceTree = "<group>"; };
+		9F6B5A692E2DAE83004D181C /* DomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModels.swift; sourceTree = "<group>"; };
+		9F6B5A6F2E2DC743004D181C /* AutoAhorroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoAhorroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6B5A802E2DCABC004D181C /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Charts.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9F6B5A512E2D9198004D181C /* AutoAhorro */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AutoAhorro;
+			sourceTree = "<group>";
+		};
+		9F6B5A702E2DC744004D181C /* AutoAhorroApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AutoAhorroApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,13 +59,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F6B5A6C2E2DC743004D181C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6B5A812E2DCABC004D181C /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9F6B5A462E2D9198004D181C = {
 			isa = PBXGroup;
 			children = (
+				9F6B5A592E2D96F8004D181C /* Sources */,
 				9F6B5A512E2D9198004D181C /* AutoAhorro */,
+				9F6B5A702E2DC744004D181C /* AutoAhorroApp */,
+				9F6B5A7F2E2DCABB004D181C /* Frameworks */,
 				9F6B5A502E2D9198004D181C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,8 +85,69 @@
 			isa = PBXGroup;
 			children = (
 				9F6B5A4F2E2D9198004D181C /* AutoAhorro */,
+				9F6B5A6F2E2DC743004D181C /* AutoAhorroApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9F6B5A592E2D96F8004D181C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A5B2E2DA690004D181C /* Domain */,
+				9F6B5A5C2E2DA690004D181C /* Input */,
+				9F6B5A5D2E2DA690004D181C /* IO */,
+				9F6B5A5E2E2DA690004D181C /* Logic */,
+				9F6B5A5A2E2D9708004D181C /* AutoAhorro */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9F6B5A5A2E2D9708004D181C /* AutoAhorro */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A522E2D9198004D181C /* main.swift */,
+			);
+			path = AutoAhorro;
+			sourceTree = "<group>";
+		};
+		9F6B5A5B2E2DA690004D181C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A692E2DAE83004D181C /* DomainModels.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9F6B5A5C2E2DA690004D181C /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A5F2E2DA7A4004D181C /* UserInput.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		9F6B5A5D2E2DA690004D181C /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A672E2DA82F004D181C /* JSONExporter.swift */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		9F6B5A5E2E2DA690004D181C /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A632E2DA7F8004D181C /* TransactionProcessor.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		9F6B5A7F2E2DCABB004D181C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B5A802E2DCABC004D181C /* Charts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +175,28 @@
 			productReference = 9F6B5A4F2E2D9198004D181C /* AutoAhorro */;
 			productType = "com.apple.product-type.tool";
 		};
+		9F6B5A6E2E2DC743004D181C /* AutoAhorroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6B5A7A2E2DC746004D181C /* Build configuration list for PBXNativeTarget "AutoAhorroApp" */;
+			buildPhases = (
+				9F6B5A6B2E2DC743004D181C /* Sources */,
+				9F6B5A6C2E2DC743004D181C /* Frameworks */,
+				9F6B5A6D2E2DC743004D181C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9F6B5A702E2DC744004D181C /* AutoAhorroApp */,
+			);
+			name = AutoAhorroApp;
+			packageProductDependencies = (
+			);
+			productName = AutoAhorroApp;
+			productReference = 9F6B5A6F2E2DC743004D181C /* AutoAhorroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +208,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					9F6B5A4E2E2D9198004D181C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					9F6B5A6E2E2DC743004D181C = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +230,35 @@
 			projectRoot = "";
 			targets = (
 				9F6B5A4E2E2D9198004D181C /* AutoAhorro */,
+				9F6B5A6E2E2DC743004D181C /* AutoAhorroApp */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		9F6B5A6D2E2DC743004D181C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F6B5A4B2E2D9198004D181C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6B5A682E2DA82F004D181C /* JSONExporter.swift in Sources */,
+				9F6B5A532E2D9198004D181C /* main.swift in Sources */,
+				9F6B5A602E2DA7A4004D181C /* UserInput.swift in Sources */,
+				9F6B5A642E2DA7F8004D181C /* TransactionProcessor.swift in Sources */,
+				9F6B5A6A2E2DAE83004D181C /* DomainModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6B5A6B2E2DC743004D181C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +408,81 @@
 			};
 			name = Release;
 		};
+		9F6B5A7B2E2DC746004D181C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoAhorroApp/Preview Content\"";
+				DEVELOPMENT_TEAM = B48W6Z88D7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AutoAhorroApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebs.AutoAhorroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9F6B5A7C2E2DC746004D181C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoAhorroApp/Preview Content\"";
+				DEVELOPMENT_TEAM = B48W6Z88D7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AutoAhorroApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebs.AutoAhorroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +500,15 @@
 			buildConfigurations = (
 				9F6B5A572E2D9198004D181C /* Debug */,
 				9F6B5A582E2D9198004D181C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F6B5A7A2E2DC746004D181C /* Build configuration list for PBXNativeTarget "AutoAhorroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6B5A7B2E2DC746004D181C /* Debug */,
+				9F6B5A7C2E2DC746004D181C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
