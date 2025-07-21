@@ -29,20 +29,22 @@ Sources/
 ├── Logic/
 │   └── TransactionProcessor.swift // Procesamiento, redondeo, formatter
 └── AutoAhorro/
-└── main.swift                     // Versión terminal que orquesta todo
+└── main.swift                 // Versión terminal que orquesta todo
+
 AutoAhorroApp/
-├── AutoAhorroApp.swift            // Punto de entrada SwiftUI
+├── AutoAhorroAppApp.swift         // Punto de entrada SwiftUI
 ├── ContentView.swift              // Vista principal combinada
 ├── ChartView.swift                // Gráfico de barras
 ├── TableView.swift                // Lista con resultados detallados
 ├── OutputViewModel.swift          // ViewModel con transacciones simuladas
 └── Assets.xcassets/               // Iconos y logo
+
 CAPTURAS/
 ├── 1.1.png                        // Launch screen simulado
 ├── 1.2.png                        // Gráfica con barras de datos
 ├── 1.3.png                        // Lista de resultados
 ├── 1.4.png                        // Toggle de tabla o gráfica
-├── 1.5.png                        // Interfaz minimalista alternativa
+└── 1.5.png                        // Interfaz minimalista alternativa
 
 ---
 
