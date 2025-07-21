@@ -29,7 +29,7 @@ Sources/
 ├── Logic/
 │   └── TransactionProcessor.swift // Procesamiento, redondeo, formatter
 └── AutoAhorro/
-└── main.swift                 // Versión terminal que orquesta todo
+└── main.swift                     // Versión terminal que orquesta todo
 AutoAhorroApp/
 ├── AutoAhorroApp.swift            // Punto de entrada SwiftUI
 ├── ContentView.swift              // Vista principal combinada
@@ -156,7 +156,7 @@ Visualiza cómo luce en el simulador de iPhone:
 ✅ v1.0 - SwiftUI App con Charts
 
 
-👨‍💻 Autor
+👨‍💻 Autor:
 
 Desarrollado por Sebastián Verástegui
 🔗 https://sebsverastegui.com
