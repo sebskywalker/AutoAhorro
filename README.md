@@ -111,7 +111,7 @@ Visualiza cómo luce en el simulador de iPhone:
 
 ## 👨‍💻 Autor:
 
-Desarrollado por Sebastián Verástegui
-🔗 https://sebsverastegui.com
+## Desarrollado por Sebastián Verástegui
+## 🔗 https://sebsverastegui.com
 
 ---
