@@ -16,7 +16,7 @@ Simulador de autoahorro que redondea gastos y calcula remanentes por transacció
 - 📊 Muestra gráficos interactivos con el framework **Charts** de Apple.
 
 ---
-
+```
 ## 🧱 Estructura del proyecto
 Sources/
 ├── Domain/
@@ -44,8 +44,9 @@ CAPTURAS/
 ├── 1.3.png                        // Lista de resultados
 ├── 1.4.png                        // Toggle de tabla o gráfica
 └── 1.5.png                        // Interfaz minimalista alternat
-
+```
 ---
+
 
 ## 📲 Interfaz SwiftUI
 
